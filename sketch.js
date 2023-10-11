@@ -4,9 +4,9 @@ let sourceImg=null;
 let maskImg=null;
 
 // change these three lines as appropiate
-let sourceFile = "input_6.jpg";
-let maskFile   = "mask_6.png";
-let outputFile = "output_6.png";
+let sourceFile = "input_2.jpg";
+let maskFile   = "mask_2.png";
+let outputFile = "output_2.png";
 
 function preload() {
   sourceImg = loadImage(sourceFile);
