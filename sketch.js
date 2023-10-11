@@ -4,9 +4,9 @@ let sourceImg=null;
 let maskImg=null;
 
 // change these three lines as appropiate
-let sourceFile = "input_3.jpg";
-let maskFile   = "mask_3.png";
-let outputFile = "output_3.png";
+let sourceFile = "input_6.jpg";
+let maskFile   = "mask_6.png";
+let outputFile = "output_6.png";
 
 function preload() {
   sourceImg = loadImage(sourceFile);
@@ -43,7 +43,7 @@ function draw () {
     for(let i=0; i<X_STOP; i++) {
       colorMode(RGB);
       let mask = maskImg.get(i, j);
-      if (mask[1] < 128) {
+      if (mask[1] > 128) {
         pix = sourceImg.get(i, j);
       }
       else {
